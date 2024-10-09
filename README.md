@@ -15,12 +15,12 @@ node index.js
 One would expect that the handlers for `uncaughtException` and `unhandledRejection` defined in the example gets triggered, but that is not the case.
 
 ```sh
-/node_modules/.pnpm/wrangler@3.80.2/node_modules/wrangler/wrangler-dist/cli.js:29768
+<dir>/node_modules/wrangler/wrangler-dist/cli.js:29768
             throw a;
             ^
 
 Error: This is an error
-    at file:///Users/ragnar.rognstad/Code/mock/wrangler-repro/index.js:17:7
+    at file:///<dir>/index.js:13:7
     at ModuleJob.run (node:internal/modules/esm/module_job:262:25)
     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:483:26)
     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
